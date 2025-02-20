@@ -20,7 +20,7 @@ main {
 }
 
 .container {
-    width: 400px;
+    width: 375px;
     height: 460px;
     display: flex;
     justify-content: space-between;
