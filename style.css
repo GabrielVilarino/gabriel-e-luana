@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('assets/background.png') no-repeat center/cover;
+}
+
+main {
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container {
+    width: 400px;
+    height: 460px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 300px;
+    height: 460px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 300%; /* 3 imagens, 100% cada */
+    transition: transform 0.5s ease-in-out;
+}
+
+.polaroid {
+    width: 300px;
+    height: 460px;
+    padding: 10px;
+    background: white;
+    text-align: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.polaroid img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.caption {
+    margin-top: 20px;
+    font-family: "Licorice", serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #333;
+}
+
+.polaroid .coracao {
+    width: 30px;
+    height: auto;
+}
+
+button {
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+    border-radius: 5px;
+    z-index: 10;  /* Garante que os botões apareçam acima da .slider */
+}
+
+.prev {
+    left: -50px; /* Ajuste para posicionar o botão à esquerda */
+}
+
+.next {
+    right: -50px; /* Ajuste para posicionar o botão à direita */
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.contador {
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFD258;
+    width: 350px;
+}
+
+.texto {
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    width: 350px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amo Você</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icon.ico" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <button class="prev" onclick="mudarSlide(-1)">&#10094;</button>
+            <section class="slider">
+                <div class="slides" style="transform: translateX(300px);">
+                    <div class="polaroid">
+                        <img src="assets/image1.png" alt="Imagem 1">
+                        <div class="caption"><p>Luana & Gabriel</p></div>
+                        <img src="assets/coracao.png" alt="coração imagem" class="coracao">
+                    </div>
+                    <div class="polaroid">
+                        <img src="assets/image2.png" alt="Imagem 2">
+                        <div class="caption"><p>Luana & Gabriel</p></div>
+                        <img src="assets/coracao.png" alt="coração imagem" class="coracao">
+                    </div>
+                    <div class="polaroid">
+                        <img src="assets/image3.png" alt="Imagem 3">
+                        <div class="caption"><p>Luana & Gabriele</p></div>
+                        <img src="assets/coracao.png" alt="coração imagem" class="coracao">
+                    </div>
+                </div>
+            </section>
+            <button class="next" onclick="mudarSlide(1)">&#10095;</button>
+        </section>
+        <section class="contador">
+            <p id="contador">Estamos juntos há 0 meses, 0 dias, 0 horas, 0 minutos e 0 segundos!</p>
+        </section>
+        <section class="texto">
+            <p>Você é especial para mim, torna meus dias mais felizes e cheios de amor, você é luz e alegra todos que estão ao seu redor. Te amo infinitamente ❤️</p>
+        </section>        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
